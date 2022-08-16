@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tipografia */
+h1 {
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 5px;
+}
+
+/* cabecalho */
+
+header {
+  background: url(../img/fundocabecalho.png) no-repeat top right #000;
+  border-bottom: 15px ridge rgb(237, 50, 55);
+  min-width: 350px;
+  padding: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
+#logocabecalho {
+  padding: 5px 10px;
+}
+
+#logocabecalho img {
+  width: 200px;
+}
+
+/* menu */
+
+#cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cabecalho .menu ul {
+  list-style: none;
+  margin: 8px;
+}
+
+#cabecalho .menu ul li {
+  margin-left: 5px;
+  padding: 5px;
+  display: inline;
+}
+
+#cabecalho .menu ul li a {
+  color: #fff;
+  padding: 2px 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+#cabecalho .menu ul li a:hover {
+  color: #fff;
+  opacity: 0.6;
+}
+
+#text {
+  font-size: 1.5em;
+}
+
+/* corpo */
+
+#apresentacao {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#apresentacao .container {
+  background: #f1f1f1;
+  box-shadow: 1px 1px 3px #000;
+  margin: 0 auto;
+}
+
+#apresentacao .container .perfil img {
+  display: flex;
+  margin: 0 auto;
+  padding: 5px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(237, 50, 55);
+}
+
+#apresentacaodados {
+  justify-content: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+#apresentacaodados h2 {
+  font-size: 2rem;
+}
+#apresentacaodados p {
+  font-size: 1.5rem;
+}
+
+#apresentacao .redes {
+  text-align: center;
+  margin: 15px;
+}
+
+#apresentacao .redes a {
+  text-align: center;
+  padding: 5px;
+  width: 100px;
+  color: #000;
+  margin: 0 5px;
+  font-size: 30px;
+}
+
+#apresentacao .redes a:hover {
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  transition: 0.8s;
+}
+
+/* trabalhos */
+
+#trabalhos {
+  border: #000 solid 1px;
+  background-color: #000;
+}
+
+#trabalhos > h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 0.8rem;
+}
+
+#trabalhos .container {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#trabalhos .container .projetos {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+.projetos:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+.projetos img {
+  filter: blur(3px);
+  width: 80%;
+}
+
+.projetos img:hover {
+  transition: 1s;
+  filter: blur(0px);
+}
+
+/* rodape */
+
+#rodape {
+  background: #000;
+  color: #fff;
+  margin-top: 20px;
+  border-top: 15px ridge rgb(237, 50, 55);
+  padding: 5px;
+}
+
+#rodape .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  
+}
+
+#rodape .container div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+#rodape .container img {
+  width: 150px;
+}
+
+
+#rodape .redes a{
+  font-size: 1.6em;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 2px 2px 4px red;
+  color: #fff;
+}
+
+#rodape .redes a:hover{
+  color: rgb(237, 50, 55);
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+/* tamanho media */
+
+@media (max-width: 700px) {
+  header {
+    border-bottom: 10px ridge rgb(237, 50, 55);
+    background: url(../img/fundotopopeq.png) no-repeat right top #000;
+  }
+
+  #logocabecalho img {
+    width: 120px;
+  }
+  
+  #rodape .container{
+  flex-direction: column;
+  }
+}
