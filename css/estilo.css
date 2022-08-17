@@ -136,12 +136,18 @@ header {
 
 /* trabalhos */
 
-#trabalhos {
+#trabalhos,
+.maistrabalhos {
   border: #000 solid 1px;
   background-color: #000;
 }
 
-#trabalhos > h1 {
+.maistrabalhos {
+  margin-top: 10px;
+}
+
+#trabalhos > h1,
+.maistrabalhos > h1 {
   color: #fff;
   text-align: center;
   padding-top: 10px;
@@ -149,7 +155,7 @@ header {
   letter-spacing: 0.8rem;
 }
 
-#trabalhos .container {
+#trabalhos .container, .maistrabalhos .container {
   margin: 5px;
   display: flex;
   flex-direction: row;
@@ -157,7 +163,8 @@ header {
   justify-content: space-around;
 }
 
-#trabalhos .container .projetos {
+#trabalhos .container .projetos,
+.maistrabalhos .container .projetos {
   padding: 5px 10px;
   margin: 5px 10px;
   color: #000;
@@ -197,10 +204,9 @@ header {
   align-items: center;
   justify-content: space-around;
   margin: 10px;
-  
 }
 
-#rodape .container div{
+#rodape .container div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -212,8 +218,7 @@ header {
   width: 150px;
 }
 
-
-#rodape .redes a{
+#rodape .redes a {
   font-size: 1.6em;
   padding: 5px;
   margin: 10px;
@@ -221,7 +226,7 @@ header {
   color: #fff;
 }
 
-#rodape .redes a:hover{
+#rodape .redes a:hover {
   color: rgb(237, 50, 55);
   border-radius: 50%;
   transition: 0.6s;
@@ -238,8 +243,12 @@ header {
   #logocabecalho img {
     width: 120px;
   }
-  
-  #rodape .container{
-  flex-direction: column;
+
+  #projetos img {
+    filter: blur(0px);
+  }
+
+  #rodape .container {
+    flex-direction: column;
   }
 }
