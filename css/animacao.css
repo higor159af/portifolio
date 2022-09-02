@@ -2,91 +2,90 @@
 /* ANIMACAO */
 
 .animacao {
-    height: 150px;
-    background: #000;
-    min-width: 350px;
-    padding: 5px;
-    overflow: hidden;
+  background: #000;
+  height: 150px;
+  min-width: 350px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.flutuacao {
+  animation: flutuar 10s linear infinite;
+  background: #ed3237;
+  border-radius: 50%;
+  box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
+    225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
+    350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
+    475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
+    570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
+    770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
+    850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
+    1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
+    1250px 65px #ed3237;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+.flutuacao::after {
+  background: #ed3237;
+  border-radius: 50%;
+  box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
+    225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
+    350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
+    475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
+    570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
+    770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
+    850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
+    1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
+    1250px 65px #ed3237;
+  content: "";
+  height: 15px;
+  position: absolute;
+  top: 150px;
+  width: 15px;
+}
+
+.flutuacao2 {
+  animation: flutuar 25s linear infinite;
+  background: #992023;
+  border-radius: 50%;
+  box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
+    225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
+    350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
+    475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
+    570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
+    770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
+    850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
+    1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
+    1250px 65px #992023;
+  height: 6px;
+  position: relative;
+  width: 6px;
+}
+.flutuacao2::after {
+  background: #992023;
+  border-radius: 50%;
+  box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
+    225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
+    350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
+    475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
+    570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
+    770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
+    850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
+    1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
+    1250px 65px #992023;
+  content: "";
+  height: 6px;
+  position: absolute;
+  top: 150px;
+  width: 6px;
+}
+
+@keyframes flutuar {
+  from {
+    transform: translateY(0px);
   }
-  
-  .flutuacao {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    border-radius: 50%;
-    background: #ed3237;
-    box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
-      225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
-      350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
-      475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
-      570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
-      770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
-      850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
-      1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
-      1250px 65px #ed3237;
-    animation: flutuar 10s linear infinite;
+  to {
+    transform: translateY(-150px);
   }
-  .flutuacao::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    top: 150px;
-    position: absolute;
-    border-radius: 50%;
-    background: #ed3237;
-    box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
-      225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
-      350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
-      475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
-      570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
-      770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
-      850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
-      1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
-      1250px 65px #ed3237;
-  }
-  
-  .flutuacao2 {
-    width: 6px;
-    height: 6px;
-    position: relative;
-    border-radius: 50%;
-    background: #992023;
-    box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
-      225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
-      350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
-      475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
-      570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
-      770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
-      850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
-      1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
-      1250px 65px #992023;
-    animation: flutuar 25s linear infinite;
-  }
-  .flutuacao2::after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    top: 150px;
-    position: absolute;
-    border-radius: 50%;
-    background: #992023;
-    box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
-      225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
-      350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
-      475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
-      570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
-      770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
-      850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
-      1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
-      1250px 65px #992023;
-  }
-  
-  @keyframes flutuar {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-150px);
-    }
-  }
-  
+}

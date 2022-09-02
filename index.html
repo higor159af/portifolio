@@ -25,12 +25,12 @@
             <a href="index.html">
               <img src="img/LogoDeveloper_branca.png" alt="logo" />
             </a>
-          </div>
+          </div> 
 
           <div class="menu">
             <ul>
               <li>
-                <a class="home" href="index.html">home</a>
+                <a class="home" href="#trabalhos">Projetos</a>
               </li>
               <li>
                 <a class="contato" href="#contato">Contato</a>
@@ -46,7 +46,7 @@
       <div class="flutuacao2"></div>
     </div>
     <!-- apresentacao -->
-    <section id="apresentacao">
+    <section id="apresentacao" class="bordas">
       <div class="container">
         <div class="perfil">
           <img src="img/perfil.jpg" alt="" />
@@ -60,7 +60,7 @@
           <a href="https://www.linkedin.com/in/higor-alves-334b8b248/"><i class="fab fa-linkedin"></i></a>
         </div>
 
-        <div id="apresentacaodados">
+        <div id="apresentacaodados" >
           <h2>Olá,</h2>
           <div id="text"></div>
         </div>
@@ -71,7 +71,7 @@
       <div class="flutuacao2"></div>
     </div>
     <!-- fim apresentacao -->
-    <section id="trabalhos">
+    <section id="trabalhos" class="trabalhos bordas">
       <h1>Projetos com Bootstrap <i class="fab fa-bootstrap"></i></h1>
       <div class="container">
         <div class="projetos"> 
@@ -88,8 +88,8 @@
       <div class="flutuacao"></div>
       <div class="flutuacao2"></div>
     </div>
-    <section class="maistrabalhos">
-      <h1>Mais Projetos <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i></h1>
+    <section class="trabalhos bordas">
+      <h1>Mais Projetos <br> <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i></h1>
       <div class="container">
         <div class="projetos"> 
           <a href="https://higor159af.github.io/petshop/"><img src="img/projeto3.png" alt=""></a>
@@ -106,6 +106,25 @@
       <div class="flutuacao2"></div>
     </div>
     <footer id="rodape">
+        
+        <div id="contato">
+          <form action="https://formsubmit.co/higoralvesmtv@gmail.com " method="POST" />
+            <div class="inputicon">
+              <label for="nome"><i class="fas fa-user" for="email"></i>Nome:</label><br>
+              <input type="text" name="nome" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="inputicon">
+              <label for="email"><i class="fas fa-at" for="email"></i>E-mail:</label><br>
+              <input type="email" name="email" id="email" placeholder="@gmail.com">
+            </div>
+            <div class="inputicon">
+              <label for="mensagem"><i class="fas fa-envelope"></i>Sua mensagem:</label> <br>
+              <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea><br>
+            </div>
+              <!-- <input class="botao" type="button" value="Enviar"> -->
+              <button class="botao" type="submit"><i class="fas fa-paper-plane"></i>Enviar</button>
+          </form>
+        </div>
         <div class="container">
           <div class="logo">
             <a href="#cabecalho"><img src="img/LogoDeveloper_branca.png" alt=""></a>

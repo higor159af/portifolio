@@ -28,6 +28,11 @@ header {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
   padding: 10px;
 }
 
@@ -42,7 +47,6 @@ header {
 /* menu */
 
 #cabecalho .container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -53,24 +57,24 @@ header {
 }
 
 #cabecalho .menu ul li {
+  display: inline;
   margin-left: 5px;
   padding: 5px;
-  display: inline;
 }
 
 #cabecalho .menu ul li a {
+  border-radius: 5px;
   color: #fff;
-  padding: 2px 10px;
+  padding: 2px 8px;
   text-decoration: none;
   text-transform: capitalize;
-  border-radius: 5px;
 }
 
 #cabecalho .menu ul li a:hover {
-  color: #fff;
   opacity: 0.6;
 }
 
+/* texto digitado js */
 #text {
   font-size: 1.5em;
 }
@@ -79,6 +83,10 @@ header {
 
 #apresentacao {
   padding: 10px;
+}
+
+.bordas,
+section.bordas {
   border-top: 15px ridge rgb(237, 50, 55);
   border-bottom: 15px ridge rgb(237, 50, 55);
 }
@@ -86,16 +94,17 @@ header {
 #apresentacao .container {
   background: #f1f1f1;
   box-shadow: 1px 1px 3px #000;
+  display: block;
   margin: 0 auto;
 }
 
 #apresentacao .container .perfil img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(237, 50, 55);
   display: flex;
   margin: 0 auto;
   padding: 5px;
   width: 200px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgb(237, 50, 55);
 }
 
 #apresentacaodados {
@@ -114,17 +123,17 @@ header {
 }
 
 #apresentacao .redes {
-  text-align: center;
   margin: 15px;
+  text-align: center;
 }
 
 #apresentacao .redes a {
-  text-align: center;
-  padding: 5px;
-  width: 100px;
   color: #000;
-  margin: 0 5px;
   font-size: 30px;
+  margin: 0 5px;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
 }
 
 #apresentacao .redes a:hover {
@@ -136,43 +145,26 @@ header {
 
 /* trabalhos */
 
-
-#trabalhos,
-.maistrabalhos {
-  border: #000 solid 1px;
+.trabalhos {
   background-color: #000;
-  border-top: 15px ridge rgb(237, 50, 55);
-  border-bottom: 15px ridge rgb(237, 50, 55);
 }
 
-
-#trabalhos > h1,
-.maistrabalhos > h1 {
+.trabalhos > h1 {
   color: #fff;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 30px;
   letter-spacing: 0.8rem;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
 }
 
-#trabalhos .container,
-.maistrabalhos .container {
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#trabalhos .container .projetos,
-.maistrabalhos .container .projetos {
-  padding: 5px 10px;
-  margin: 5px 10px;
-  color: #000;
+.trabalhos .container .projetos {
   background: #fff;
   border-radius: 10px;
-  width: 280px;
+  color: #000;
+  margin: 5px 10px;
+  padding: 5px 10px;
   text-align: center;
+  width: 280px;
 }
 
 .projetos:hover {
@@ -186,24 +178,23 @@ header {
 }
 
 .projetos img:hover {
-  transition: 1s;
   filter: blur(0px);
+  transition: 1s;
 }
 
 /* rodape */
 
 #rodape {
   background: #000;
-  color: #fff;
   border-top: 15px ridge rgb(237, 50, 55);
+  color: #fff;
   padding: 5px;
+  /*  display: flex;
+  flex-wrap: wrap; */
 }
 
 #rodape .container {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 10px;
 }
 
 #rodape .container div {
@@ -219,11 +210,11 @@ header {
 }
 
 #rodape .redes a {
-  font-size: 1.6em;
-  padding: 5px;
-  margin: 10px;
   box-shadow: 2px 2px 4px red;
   color: #fff;
+  font-size: 1.6em;
+  margin: 10px;
+  padding: 5px;
 }
 
 #rodape .redes a:hover {
@@ -232,12 +223,89 @@ header {
   transition: 0.6s;
 }
 
+/* formulario */
+#rodape #contato {
+  background: url(../img/AT_CONTATO.png) no-repeat left bottom;
+  box-shadow: 2px 2px 4px red;
+  margin: 0 auto;
+  padding: 10px;
+  width: 350px;
+}
+
+#contato form {
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+#contato form input,
+textarea {
+  align-items: center;
+  border-radius: 10px;
+  display: block;
+  height: 15px;
+  margin: 6px auto;
+  padding: 5px 15px;
+  padding-left: 50px;
+  text-align: right;
+  width: 200px;
+}
+
+#contato label {
+  font-size: 0.8rem;
+  margin: 0 20px;
+  padding: 5px 20px;
+}
+
+#contato .botao {
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px 2px red;
+  color: red;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 50px;
+  margin: 0px auto 10px auto;
+  padding: 5px 0;
+  position: relative;
+  text-align: center;
+  transition: all 1s;
+  width: 200px;
+}
+#contato .botao:hover {
+  background: linear-gradient(15deg, rgb(255, 65, 65), red);
+  color: #000;
+}
+#contato .botao i {
+  left: 25px;
+  padding: 5px;
+  position: absolute;
+}
+
+.inputicon {
+  padding: 5px;
+  position: relative;
+}
+
+.inputicon i {
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.397);
+  color: #000;
+  left: 50px;
+  padding: 9px;
+  position: absolute;
+  top: 30px;
+  width: 20px;
+}
+
 /* tamanho media */
 
 @media (max-width: 700px) {
   header {
-    border-bottom: 10px ridge rgb(237, 50, 55);
     background: url(../img/fundotopopeq.png) no-repeat right top #000;
+    border-bottom: 10px ridge rgb(237, 50, 55);
   }
 
   #logocabecalho img {
@@ -245,101 +313,10 @@ header {
   }
 
   #projetos img {
-    filter: blur(0px);
+    filter: none;
   }
 
   #rodape .container {
     flex-direction: column;
-  }
-}
-
-/* ANIMACAO */
-
-.animacao {
-  height: 150px;
-  background: #000;
-  min-width: 350px;
-  padding: 5px;
-  overflow: hidden;
-}
-
-.flutuacao {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  border-radius: 50%;
-  background: #ed3237;
-  box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
-    225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
-    350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
-    475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
-    570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
-    770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
-    850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
-    1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
-    1250px 65px #ed3237;
-  animation: flutuar 10s linear infinite;
-}
-.flutuacao::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  top: 150px;
-  position: absolute;
-  border-radius: 50%;
-  background: #ed3237;
-  box-shadow: 100px 50px #ed3237, 10px 100px #ed3237, 250px 75px #ed3237,
-    225px 30px #ed3237, 175px 100px #ed3237, 325px 15px #ed3237,
-    350px 45px #ed3237, 350px 140px #ed3237, 450px 100px #ed3237,
-    475px 10px #ed3237, 490px 90px #ed3237, 520px 15px #ed3237,
-    570px 45px #ed3237, 650px 100px #ed3237, 700px 45px #ed3237,
-    770px 5px #ed3237, 710px 145px #ed3237, 780px 60px #ed3237,
-    850px 90px #ed3237, 900px 100px #ed3237, 925px 75px #ed3237,
-    1000px 105px #ed3237, 1150px 35px #ed3237, 1075px 15px #ed3237,
-    1250px 65px #ed3237;
-}
-
-.flutuacao2 {
-  width: 6px;
-  height: 6px;
-  position: relative;
-  border-radius: 50%;
-  background: #992023;
-  box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
-    225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
-    350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
-    475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
-    570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
-    770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
-    850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
-    1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
-    1250px 65px #992023;
-  animation: flutuar 25s linear infinite;
-}
-.flutuacao2::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  top: 150px;
-  position: absolute;
-  border-radius: 50%;
-  background: #992023;
-  box-shadow: 100px 50px #992023, 10px 100px #992023, 250px 75px #992023,
-    225px 30px #992023, 175px 100px #992023, 325px 15px #992023,
-    350px 45px #992023, 350px 140px #992023, 450px 100px #992023,
-    475px 10px #992023, 490px 90px #992023, 520px 15px #992023,
-    570px 45px #992023, 650px 100px #992023, 700px 45px #992023,
-    770px 5px #992023, 710px 145px #992023, 780px 60px #992023,
-    850px 90px #992023, 900px 100px #992023, 925px 75px #992023,
-    1000px 105px #992023, 1150px 35px #992023, 1075px 15px #992023,
-    1250px 65px #992023;
-}
-
-@keyframes flutuar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-150px);
   }
 }
