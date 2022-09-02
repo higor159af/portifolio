@@ -311,8 +311,10 @@ textarea {
   #logocabecalho img {
     width: 120px;
   }
-
-  #projetos img {
+  .projetos:hover {
+    transform: scale(1);
+  }
+  .projetos img {
     filter: none;
   }
 
