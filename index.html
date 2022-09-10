@@ -16,6 +16,7 @@
     ></script>
     
     <script src="js/text.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header id="cabecalho">
@@ -27,15 +28,23 @@
             </a>
           </div> 
 
-          <div class="menu">
-            <ul>
+          <div class="menu" id="menuNav">
+            <ul class="navega">
               <li>
-                <a class="home" href="#trabalhos">Projetos</a>
+                <a class="home bn" href="#cabecalho">Home</a>
               </li>
               <li>
-                <a class="contato" href="#contato">Contato</a>
+                <a class="home bn" href="#trabalhos">Projetos</a>
+              </li>
+              <li>
+                <a class="contato bn" href="#contato">Contato</a>
               </li>
             </ul>
+          </div>
+          <div class="nav-button" onclick="openCloseNav()">
+            <div class="l l1"></div>
+            <div class="l l2"></div>
+            <div class="l l3"></div>
           </div>
         </div>
       </nav>

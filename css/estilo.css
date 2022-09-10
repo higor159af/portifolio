@@ -51,28 +51,78 @@ header {
   justify-content: space-between;
 }
 
-#cabecalho .menu ul {
-  list-style: none;
-  margin: 8px;
+
+/* hamburguer */
+
+.nav-button {
+  display: none;
 }
 
-#cabecalho .menu ul li {
-  display: inline;
-  margin-left: 5px;
-  padding: 5px;
-}
-
-#cabecalho .menu ul li a {
-  border-radius: 5px;
+.nav-button {
+  background: rgba(0, 0, 0, 0.678);
+  border-radius: 50%;
+  border: none;
   color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 8px;
+  padding: 8px;
+  position: fixed;
+  right: 0px;
+  top: 0;
+  z-index: 2;
+}
+
+.l{
+  background: #fff;
+  height: 1px;
+  margin: 8px;
+  width: 20px;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  width: 0%;
+  z-index: 1;
+}
+
+.menu ul {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  top: 25%;
+  width: 100%;
+}
+
+
+.menu li{
+  padding: 5px;
+
+}
+
+.menu ul li a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 4px;  
+  margin: 20px;
+  opacity: 0.6;
   padding: 2px 8px;
   text-decoration: none;
   text-transform: capitalize;
+  transition: all 0.6s;
 }
 
-#cabecalho .menu ul li a:hover {
-  opacity: 0.6;
+.menu ul li a:hover {
+  opacity: 1;
 }
+
 
 /* texto digitado js */
 #text {
@@ -311,6 +361,10 @@ textarea {
   #logocabecalho img {
     width: 120px;
   }
+  .menu ul li a {
+    font-size: 0.9rem;
+  }
+
   .projetos:hover {
     transform: scale(1);
   }
