@@ -51,7 +51,6 @@ header {
   justify-content: space-between;
 }
 
-
 /* hamburguer */
 
 .nav-button {
@@ -73,7 +72,7 @@ header {
   z-index: 2;
 }
 
-.l{
+.l {
   background: #fff;
   height: 1px;
   margin: 8px;
@@ -100,17 +99,15 @@ header {
   width: 100%;
 }
 
-
-.menu li{
+.menu li {
   padding: 5px;
-
 }
 
 .menu ul li a {
   color: #fff;
   display: block;
   font-size: 20px;
-  letter-spacing: 4px;  
+  letter-spacing: 4px;
   margin: 20px;
   opacity: 0.6;
   padding: 2px 8px;
@@ -122,7 +119,6 @@ header {
 .menu ul li a:hover {
   opacity: 1;
 }
-
 
 /* texto digitado js */
 #text {
@@ -144,8 +140,13 @@ section.bordas {
 #apresentacao .container {
   background: #f1f1f1;
   box-shadow: 1px 1px 3px #000;
-  display: block;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+}
+
+.container .perfil {
+  width: 300px;
 }
 
 #apresentacao .container .perfil img {
@@ -160,16 +161,20 @@ section.bordas {
 #apresentacaodados {
   justify-content: center;
   margin-top: 10px;
-  margin: 0 auto;
   padding: 5px;
   text-align: center;
 }
 
 #apresentacaodados h2 {
   font-size: 2rem;
+  text-align: left;
+  padding: 5px;
 }
 #apresentacaodados p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding: 5px;
+  text-align: justify;
+  max-width: 700px;
 }
 
 #apresentacao .redes {
@@ -351,6 +356,12 @@ textarea {
 }
 
 /* tamanho media */
+
+@media (max-width: 1060px) {
+  #apresentacaodados h2 {
+    text-align: center;
+  }
+}
 
 @media (max-width: 700px) {
   header {
